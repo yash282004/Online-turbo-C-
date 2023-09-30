@@ -1,0 +1,31 @@
+
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+
+int main()
+{
+   char s1[20],s2[20];
+   int i;
+   clrscr();
+   cout<<"Enter a string:";
+   cin>>s1;
+   strcpy(s2,s1);
+   cout<<"String s2 is:"<<s2<<endl;
+   strrev(s1);
+   cout<<"String after reverse:"<<s1<<endl;
+   i=strcmp(s1,s2);
+   if(i==0)
+   {
+       cout<<"Palindrome";
+       
+       
+   }
+   else
+   {
+       cout<<"Not palindrome";
+   }
+   
+
+    return 0;
+}
