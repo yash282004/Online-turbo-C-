@@ -28,8 +28,8 @@
 		box b1,*p;
 		p=&b1;
 		clrscr();
-		b1->getdata();
-		b1->showdata();
+		p->getdata();
+		p->showdata();
 		getch();
 		return 0;
 		}
