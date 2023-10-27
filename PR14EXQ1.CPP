@@ -27,6 +27,7 @@
 	{
 		book b1;
 		book *p;
+  p=&b1;
 		clrscr();
 		p->getdata();
 		p->showdata();
