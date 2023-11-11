@@ -15,7 +15,7 @@ class complex
         }
         void showdata()
         {
-            cout<<real<<" + "<<img<<"i"<<endl;endl;
+            cout<<real<<" + "<<img<<"i"<<endl;
         }
         friend complex operator +(complex c1,complex c2);
         
