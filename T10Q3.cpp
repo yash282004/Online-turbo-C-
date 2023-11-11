@@ -6,7 +6,7 @@ class base
     public:
             void getdata()
             {
-                cout<<"Enter string number 1 and number 2 :"<<endl;
+                cout<<"Enter number 1 and number 2 :"<<endl;
                 cin>>n1>>n2;
             }
             void operator ++()
