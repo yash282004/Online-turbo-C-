@@ -1,0 +1,60 @@
+#include<iostream.h>
+#include<conio.h>
+class staff
+{
+    protected:
+     int code;
+    public:
+           void getcode()
+            {
+                cout<<"Enter code for staff member:"<<endl;
+                cin>>code;
+            }
+        
+};
+class teacher : public staff
+{
+    private:
+            char subject[20];
+    public:
+          void  getteacher()
+            {
+                cout<<"Enter subject name:"<<endl;
+                cin>>subject;
+            }
+          void  showteacher()
+            {
+                cout<<"CODE="<<code<<endl;
+                cout<<"SUBJECT="<<subject<<endl;
+            }
+};
+class officer: public staff
+{
+    private:
+            char grade[5];
+    public:
+           void getofficer()
+           {
+               cout<<"Enter officer grade:"<<endl;
+               cin>>grade;
+           }
+           void showofficer()
+           {
+               cout<<"CODE="<<code<<endl;
+               cout<<"OFFICER GRADE="<<grade<<endl;
+           }
+};
+int main()
+{
+    teacher t1;
+    officer o1;
+    clrscr();
+    t1.getcode();
+    t1.getteacher();
+    t1.showteacher();
+    o1.getcode();
+    o1.getofficer();
+    o1.showofficer();
+    getch();
+    return 0;
+}
