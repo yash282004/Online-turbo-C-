@@ -1,21 +1,16 @@
 #include<iostream.h>
 #include<conio.h>
-int factorial(int n);
 int main()
 {
-    int n,fact;
+    int i,n,fact=1;
     clrscr();
-    cout<<" Enter a number youy want factorial of";
+    cout<<"Enter number:"<<endl;
     cin>>n;
-    fact=factorial(n);
-    cout<<"factorial is "<<fact;
-    return 0;
-}
-factorial(int n)
-{
-    if(n==0)
+    for(i=1;i<=n;i++)
     {
-        return 1;
+        fact=fact*i;
     }
-    return n*factorial(n-1);
+    cout<<"factorial of given number is : "<<fact<<endl;
+    getch();
+    return 0;
 }
