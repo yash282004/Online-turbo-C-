@@ -7,7 +7,7 @@ int count=0;
 char temp[20];
 ifstream fin;
 clrscr();
-fin.open("line.txt",ios::out);
+fin.open("line.txt",ios::in);
 while(!fin.eof())
 {
 fin.getline(temp,20);
