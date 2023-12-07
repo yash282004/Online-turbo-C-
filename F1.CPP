@@ -6,7 +6,7 @@ int main()
 ofstream fout;
 char ch;
 clrscr();
-fout.open("f1.txt",ios::in);
+fout.open("f1.txt",ios::out);
 fout<<"Yash_khandagale"<<endl;
 fout.close();
 ifstream fin;
