@@ -5,11 +5,11 @@ int main()
 {
 ofstream fout;
 clrscr();
-fout.open("f2.txt",ios::in);
+fout.open("f2.txt",ios::out);
 fout<<"Welcome to poly"<<endl;
 fout.close();
 ifstream fin;
-fin.open("f2.txt",ios::out);
+fin.open("f2.txt",ios::in);
 char ch;
 while(!fin.eof())
 {
