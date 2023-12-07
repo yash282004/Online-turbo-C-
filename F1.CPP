@@ -10,7 +10,7 @@ fout.open("f1.txt",ios::out);
 fout<<"Yash_khandagale"<<endl;
 fout.close();
 ifstream fin;
-fin.open("f1.txt",ios::out);
+fin.open("f1.txt",ios::in);
 while(!fin.eof())
 {
 fin.get(ch);
