@@ -8,7 +8,7 @@ ifstream fin;
 ofstream fout;
 clrscr();
 fout.open("demo.txt",ios::app);
-fin.open("f1.txt",ios::out);
+fin.open("f1.txt",ios::in);
 while(!fin.eof())
 {
 fin.get(ch);
